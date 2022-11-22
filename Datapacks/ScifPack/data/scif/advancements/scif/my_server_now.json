@@ -1,0 +1,40 @@
+{
+    "display": {
+        "icon": {
+          "item": "minecraft:player_head",
+          "nbt": "{SkullOwner:{Id:[I;1684502214,2030261973,-1342371707,456769113],Properties:{textures:[{Value:\"e3RleHR1cmVzOntTS0lOOnt1cmw6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZmFjZjgyZDhhODE0MDEzODZlMmVhMmVlMzJmMzVjYTYxOGQ4NzdkODA0NmM0OTI5NGRhMWU2Yzg1YzYyNGFiYiJ9fX0=\"}]}}}"
+        },
+        "title": "My Server Now",
+        "description": "Wear Hakan's head and act like you run the server",
+        "frame": "challenge",
+        "announce_to_chat": true,
+        "hidden": false
+      },
+      "rewards": {
+        "function": "scif:msg/my_server_now"
+      },
+    "parent": "scif:scif/chlud_club",
+    "criteria": {
+      "snowball": {
+        "trigger": "minecraft:tick",
+        "conditions": {
+          "player": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "equipment": {
+                  "head": {
+                    "items": [
+                      "minecraft:player_head"
+                    ],
+                    "nbt": "{SkullOwner:{Id:[I;1684502214,2030261973,-1342371707,456769113],Properties:{textures:[{Value:\"e3RleHR1cmVzOntTS0lOOnt1cmw6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZmFjZjgyZDhhODE0MDEzODZlMmVhMmVlMzJmMzVjYTYxOGQ4NzdkODA0NmM0OTI5NGRhMWU2Yzg1YzYyNGFiYiJ9fX0=\"}]}}}"
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  }

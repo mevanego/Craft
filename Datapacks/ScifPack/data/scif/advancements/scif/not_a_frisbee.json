@@ -1,0 +1,29 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:snowball"
+		},
+		"title": {"translate":"That's not a Frisbee"},
+		"description": {"translate":"Throw a snowball at something"},
+		"announce_to_chat": true
+	},
+	"parent": "scif:scif/root",
+	"rewards": {
+		"function": "scif:msg/not_a_frisbee"
+	},
+	"criteria": {
+		"shot_trident": {
+			"trigger": "minecraft:player_hurt_entity",
+			"conditions": {
+				"damage": {
+					"type": {
+						"is_projectile": true,
+						"direct_entity": {
+							"type": "minecraft:snowball"
+						}
+					}
+				}
+			}
+		}
+	}
+}

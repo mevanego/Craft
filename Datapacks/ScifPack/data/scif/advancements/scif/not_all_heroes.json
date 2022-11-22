@@ -1,0 +1,37 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:birch_log"
+      },
+      "title": "Not All Heroes Wear Capes",
+      "description": "Mine 1000 Birch Logs",
+      "frame": "goal",
+      "announce_to_chat": true,
+      "hidden": false
+    },
+    "parent": "scif:scif/talking_to_the_moon",
+    "criteria": {
+      "chop": {
+        "trigger": "minecraft:location",
+        "conditions": {
+          "player": {
+            "type_specific": {
+              "type": "player",
+              "stats": [
+                {
+                  "type": "minecraft:mined",
+                  "stat": "minecraft:birch_log",
+                  "value": 1000
+                }
+              ]
+            }
+          }
+        }
+      }
+    },
+    "rewards": {
+      "experience": 100,
+      "function": "scif:msg/not_all_heroes"
+    }
+  }
+  

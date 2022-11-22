@@ -1,0 +1,35 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:wooden_sword"
+        },
+		"title": {"translate":"That's Not Nice"},
+		"description": {"color":"green","translate":"Kill another player"},
+		"announce_to_chat": true
+
+	},
+	"parent": "scif:scif/root",
+	"rewards": {
+		"function": "scif:msg/thats_not_nice"
+	},
+    		
+    "criteria": {
+        "kill_player": {
+          "trigger": "minecraft:location",
+          "conditions": {
+            "player": {
+              "type_specific": {
+                "type": "player",
+                "stats": [
+                  {
+                    "type": "minecraft:killed",
+                    "stat": "minecraft:player",
+                    "value": 1
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+}

@@ -1,0 +1,53 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:water_bucket"
+      },
+      "title": "Ducks Love Water",
+      "description": "Drink a water bottle while in water, while it is raining",
+      "frame": "goal",
+      "announce_to_chat": true,
+      "hidden": false
+    },
+    "rewards": {
+      "function": "scif:msg/ducks_love_water"
+    },
+    "parent": "scif:scif/not_a_frisbee",
+    "criteria": {
+      "ducks_love_water": {
+        "trigger": "minecraft:tick",
+        "conditions": {
+          "player": [
+            {
+              "condition": "minecraft:weather_check",
+              "raining": true
+            },
+            {
+              "condition": "minecraft:location_check",
+              "predicate": {
+                "block": {
+                  "blocks": [
+                    "minecraft:water"
+                  ]
+                }
+              }
+            },
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "equipment": {
+                  "mainhand": {
+                    "items": [
+                      "minecraft:potion"
+                    ]
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+  

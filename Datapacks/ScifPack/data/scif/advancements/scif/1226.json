@@ -1,0 +1,49 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:diamond_block",
+        "nbt": "{Enchantments:[{id:\"minecraft:unbreaking\",lvl:10}]}"
+      },
+      "title": "12:26",
+      "description": "Hold Exactly 12 Diamonds and 26 Diamond Blocks",
+      "frame": "challenge",
+      "announce_to_chat": true,
+      "show_toast":  true,
+      "hidden": false
+    },
+    "parent": "scif:scif/root",
+
+	"criteria": {
+        "diamond": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"minecraft:diamond"
+						],
+						"count": 12
+					}
+				]
+			}
+		},		
+        "diamondblock": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"minecraft:diamond_block"
+						],
+						"count": 26
+					}
+				]
+			}
+		}		
+	}	,
+    "rewards": {
+      "experience": 1226,
+      "function": "scif:msg/1226"
+    }
+  }
+  

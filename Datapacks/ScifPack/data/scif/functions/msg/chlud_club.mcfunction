@@ -1,0 +1,1 @@
+tellraw @a {"translate":"%1$s has reached the goal %2$s%3$s%4$s","with":[{"selector":"@s"},{"color":"red","translate":"[Welcome to the Chlud Club]","hoverEvent":{"action":"show_text","contents":{"color":"red","translate":"Welcome to the Chlud Club","extra":[{"text":"\n"},{"color":"red","translate":"Die 50 times. (Don't worry buddy, we're here for you)"}]}}}]}

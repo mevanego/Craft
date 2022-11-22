@@ -1,0 +1,37 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:player_head",
+      "nbt": "{SkullOwner:{Id:[I;978531920,1915311269,-1152163534,-195033523],Properties:{textures:[{Value:\"e3RleHR1cmVzOntTS0lOOnt1cmw6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGEzNzFiOTY0YWYxMDI0MDRmNzM5MzZjOWY3MmZmMGJkMDY3YzYwNDk3NWE3Njc0MzI3YzIwNTU2YjkxYjBhZiJ9fX0=\"}]}}}"
+    },
+    "title": "Welcome to the Chlud Club",
+    "description": "Die 50 times",
+    "frame": "challenge",
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "scif:scif/root",
+  "criteria": {
+    "die": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": {
+          "type_specific": {
+            "type": "player",
+            "stats": [
+              {
+                "type": "minecraft:custom",
+                "stat": "minecraft:deaths",
+                "value": 50
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "experience": 100,
+    "function": "scif:msg/chlud_club"
+  }
+}

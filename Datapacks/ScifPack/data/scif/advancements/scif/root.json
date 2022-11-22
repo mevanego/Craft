@@ -1,0 +1,19 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:clock",
+            "nbt": "{Enchantments:[{id:\"minecraft:unbreaking\",lvl:10}]}"
+		},
+		"title": {"translate":"SCIF - 12:26"},
+		"description": {"color":"blue","translate":"Custom Season 6 Advancements!"},
+		"background": "minecraft:textures/block/gold_block.png",
+		"show_toast": false,
+		"announce_to_chat": false
+	},
+	
+	"criteria": {
+		"start": {
+			"trigger": "minecraft:tick"
+		}
+	}
+}

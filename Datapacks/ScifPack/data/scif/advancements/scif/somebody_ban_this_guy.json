@@ -1,0 +1,36 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:skeleton_skull"
+        },
+		"title": {"translate":"Somebody Ban This Guy"},
+		"description": {"color":"red","translate":"Kill other players 50 times"},
+		"announce_to_chat": true,
+        "frame": "challenge"
+
+	},
+	"parent": "scif:scif/thats_not_nice",
+	"rewards": {
+		"function": "scif:msg/somebody_ban_this_guy"
+	},
+    		
+    "criteria": {
+        "kill_player": {
+          "trigger": "minecraft:location",
+          "conditions": {
+            "player": {
+              "type_specific": {
+                "type": "player",
+                "stats": [
+                  {
+                    "type": "minecraft:killed",
+                    "stat": "minecraft:player",
+                    "value": 50
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+}

@@ -1,0 +1,39 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:bow",
+        "nbt": "{Enchantments:[{id:\"minecraft:unbreaking\",lvl:10}]}"
+      },
+      "title": "Sova One Trick",
+      "description": "Shoot a bow... a lot",
+      "frame": "challenge",
+      "announce_to_chat": true,
+      "show_toast": true,
+      "hidden": false
+    },
+    "parent": "scif:scif/spike_detonated",
+    "criteria": {
+      "chop": {
+        "trigger": "minecraft:location",
+        "conditions": {
+          "player": {
+            "type_specific": {
+              "type": "player",
+              "stats": [
+                {
+                  "type": "minecraft:used",
+                  "stat": "minecraft:bow",
+                  "value": 3000
+                }
+              ]
+            }
+          }
+        }
+      }
+    },
+    "rewards": {
+      "experience": 200,
+      "function": "scif:msg/sova_one_trick"
+    }
+  }
+  
