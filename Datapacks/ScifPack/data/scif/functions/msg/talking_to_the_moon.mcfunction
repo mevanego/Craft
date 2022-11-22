@@ -1,0 +1,1 @@
+tellraw @a {"translate":"%1$s has reached the goal %2$s%3$s%4$s","with":[{"selector":"@s"},{"color":"green","translate":"[Talking to the Moon]","hoverEvent":{"action":"show_text","contents":{"color":"green","translate":"Talking to the Moon","extra":[{"text":"\n"},{"color":"green","translate":"Mine 1000 Copper Ore... Then maybe give some to Alex."}]}}}]}

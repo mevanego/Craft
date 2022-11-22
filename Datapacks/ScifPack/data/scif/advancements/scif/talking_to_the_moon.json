@@ -31,7 +31,10 @@
       }
     },
     "rewards": {
-      "experience": 100
+      "experience": 100,
+      "rewards": {
+        "function": "scif:msg/talking_to_the_moon"
+      }
     }
   }
   
