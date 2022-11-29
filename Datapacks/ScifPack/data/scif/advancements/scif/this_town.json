@@ -1,0 +1,45 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:crossbow"
+		},
+		"title": {"translate":"This Town Ain't Big Enough"},
+		"description": {"color":"dark_purple","translate":"Kill another player with a crossbow at noon"},
+		"announce_to_chat": true,
+		"frame": "challenge"
+	},
+	"parent": "scif:scif/thats_not_nice",
+	"rewards": {
+		"function": "scif:msg/this_town",
+		"experience": 300
+	},	
+	"criteria": {
+		"killed_player": {
+			"trigger": "minecraft:player_killed_entity",
+			"conditions": {
+				"killing_blow": {
+					"is_projectile": true,
+                    "source_entity": {
+                      "equipment": {
+                        "mainhand": {
+                          "items": [
+                            "minecraft:crossbow"
+                          ]
+                        }
+                      }
+                    }
+				},
+				"entity": {
+					"type": "player"
+				},
+                "test":{
+                    "condition": "minecraft:time_check",
+                    "value": {
+                        "min": 5500,
+                        "max": 6500
+                      }
+                }
+			}
+		}
+	}
+}

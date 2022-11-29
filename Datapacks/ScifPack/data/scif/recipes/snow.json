@@ -1,0 +1,33 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+      {
+        "item": "snowball"
+      },
+      {
+        "item": "snowball"
+      },
+      {
+        "item": "snowball"
+      },
+      {
+        "item": "snowball"
+      },
+      {
+        "item": "snowball"
+      },
+      {
+        "item": "snowball"
+      },
+      {
+        "item": "snowball"
+      },
+      {
+        "item": "snowball"
+      }
+    ],
+    "result": {
+      "item": "snow_block",
+      "count": 2
+    }
+  }

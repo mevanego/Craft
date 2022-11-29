@@ -1,0 +1,34 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:tipped_arrow"
+		},
+		"title": {"translate":"OP Crutch"},
+		"description": {"color":"dark_purple","translate":"Shoot another player from over 100 blocks away"},
+		"announce_to_chat": true,
+		"frame": "challenge"
+	},
+	"parent": "scif:scif/sova_one_trick",
+	"rewards": {
+		"function": "scif:msg/op_crutch",
+		"experience": 200
+	},	
+	"criteria": {
+		"killed_phantom": {
+			"trigger": "minecraft:player_hurt_entity",
+			"conditions": {
+				"killing_blow": {
+					"is_projectile": true
+				},
+				"entity": {
+					"type": "player",
+					"distance": {
+						"absolute": {
+							"min": 100
+						}
+					}
+				}
+			}
+		}
+	}
+}

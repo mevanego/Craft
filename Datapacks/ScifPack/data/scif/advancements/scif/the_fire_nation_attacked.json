@@ -1,0 +1,29 @@
+{
+    "display": {
+		"icon": {
+			"item": "minecraft:fire_charge"
+		},
+		"title": {"translate":"The Fire Nation Attacked"},
+		"description": {"color":"green","translate":"Catch on Fire! Then call the Avatar"},
+		"announce_to_chat": true
+	},
+	"parent": "scif:scif/talking_to_the_moon",
+	"rewards": {
+		"function": "scif:msg/the_fire_nation_attacked"
+	},	
+    "criteria": {
+      "fire": {
+        "trigger": "minecraft:location",
+        "conditions": {
+          "player": {
+            "type_specific": {
+              "type": "player"
+            },
+            "flags": {
+              "is_on_fire": true
+            }
+          }
+        }
+      }
+    }
+  }

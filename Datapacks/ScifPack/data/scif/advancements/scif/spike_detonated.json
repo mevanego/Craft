@@ -12,17 +12,17 @@
 	"rewards": {
 		"function": "scif:msg/spike_detonated"
 	},		
-    "criteria": {
-        "tnt": {
-          "trigger": "minecraft:entity_hurt_player",
-          "conditions": {
-            "killing_blow": {
-              "is_explosion": true,
-              "source_entity": {
-                "type": "minecraft:tnt"
-              }
-            }
+  
+  "criteria": {
+    "add": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "damage": {
+          "type": {
+            "is_explosion": true
           }
         }
       }
+    }
+  }
 }

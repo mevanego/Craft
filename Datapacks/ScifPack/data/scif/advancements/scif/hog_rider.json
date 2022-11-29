@@ -1,0 +1,45 @@
+{    
+    "display": {
+    "icon": {
+      "item": "minecraft:pig_spawn_egg"
+    },
+    "title": "Hooogggggg Ridddddaaaa!",
+    "description": "Ride a pig that has Jump Boost II",
+    "frame": "challenge",
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "rewards": {
+    "function": "scif:msg/hog_rider",
+    "experience": 125
+  },
+    "parent": "scif:scif/217_trapdoor",
+    "criteria": {
+		"hog_rider": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player": [
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"vehicle": {
+								"type": "pig"
+							},
+                            "effects": {
+								"minecraft:jump_boost": {
+									"amplifier": {
+										"min": 1
+									},
+									"duration": {
+										"min": 1
+									}
+								}
+							}
+						}
+					}
+				]  
+			}
+		}
+	}
+  }

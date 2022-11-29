@@ -1,0 +1,41 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:map"
+      },
+      "title": "Server Cartographer",
+      "description": "Craft 100 Maps",
+      "frame": "goal",
+      "announce_to_chat": true,
+      "show_toast": false,
+      "hidden": false
+    },
+    "parent": "scif:scif/not_all_heroes",
+    "criteria": {
+      "chop": {
+        "trigger": "minecraft:location",
+        "conditions": {
+          "player": {
+            "type_specific": {
+              "type": "player",
+              "stats": [
+                {
+                  "type": "minecraft:crafted",
+                  "stat": "minecraft:map",
+                  "value": {
+                    "min": 100,
+                    "max": 1000
+                  }
+                }
+              ]
+            }
+          }
+        }
+      }
+    },
+    "rewards": {
+      "experience": 150,
+      "function": "scif:msg/server_cartographer"
+    }
+  }
+  

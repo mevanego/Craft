@@ -1,0 +1,1 @@
+tellraw @a {"translate":"%1$s has reached the goal %2$s%3$s%4$s","with":[{"selector":"@s"},{"color":"gold","translate":"[...But they do wear blankets!]","hoverEvent":{"action":"show_text","contents":{"color":"gold","translate":"...But they do wear blankets!","extra":[{"text":"\n"},{"color":"gold","translate":"Sleep in a bed 100 times. Thanks for keeping the server safe!"}]}}}]}

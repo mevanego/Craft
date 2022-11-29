@@ -1,0 +1,65 @@
+{
+    "display": {
+        "icon": {
+          "item": "minecraft:feather",
+          "nbt": "{Enchantments:[{id:\"minecraft:unbreaking\",lvl:10}]}"
+
+        },
+        "title": "Birds of a Feather",
+        "description": "Fly to y=350 while wearing a chicken head and holding a feather in each hand",
+        "frame": "challenge",
+        "announce_to_chat": true,
+        "hidden": false
+      },
+      "rewards": {
+        "function": "scif:msg/birds_of_a_feather",
+        "experience": 500
+      },
+    "parent": "scif:scif/tomorrows_ducks",
+    "criteria": {
+      "fly": {
+        "trigger": "minecraft:location",
+        "conditions": {
+          "player": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "location": {
+                  "position": {
+                    "y": {
+                      "min": 350.0
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "equipment": {
+                  "head": {
+                    "items": [
+                      "minecraft:player_head"
+                    ],
+                    "nbt": "{SkullOwner:{Id:[I;-935129388,-883012526,-1795271171,133599976],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDJhZjZlNTg0N2VlYTA5OWUxYjBhYjhjMjBhOWU1ZjNjNzE5MDE1OGJkYTU0ZTI4MTMzZDliMjcxZWMwY2I0YiJ9fX0=\"}]}}}"
+                  },
+                  "mainhand": {
+                    "items": [
+                      "minecraft:feather"
+                    ]
+                  },
+                  "offhand": {
+                    "items": [
+                      "minecraft:feather"
+                    ]
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  }

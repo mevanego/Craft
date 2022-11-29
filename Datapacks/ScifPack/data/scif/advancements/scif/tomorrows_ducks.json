@@ -1,0 +1,39 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:wheat_seeds"
+		},
+		"title": {"translate":"Tomorrows Ducks"},
+		"description": {"color":"green","translate":"Feed a baby chicken some wheat seeds"},
+		"announce_to_chat": true
+	},
+	"parent": "scif:scif/not_a_frisbee",
+	"rewards": {
+		"function": "scif:msg/tomorrows_ducks",
+		"experience": 50
+	},		
+	"criteria": {
+		"name_tag": {
+			"trigger": "minecraft:player_interacted_with_entity",
+			"conditions": {
+				"item": {
+					"items": [
+						"minecraft:wheat_seeds"
+					]
+				},
+				"entity": [
+					{
+						"condition": "minecraft:entity_properties",
+						"predicate": {
+							"type": "minecraft:chicken",
+							"flags": {
+								"is_baby": true
+							}
+						},
+						"entity": "this"
+					}
+				]
+			}
+		}
+	}
+}

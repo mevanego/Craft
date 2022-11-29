@@ -13,17 +13,21 @@
 	},
 	"criteria": {
 		"shot_trident": {
-			"trigger": "minecraft:player_hurt_entity",
+			"trigger": "minecraft:location",
 			"conditions": {
-				"damage": {
-					"type": {
-						"is_projectile": true,
-						"direct_entity": {
-							"type": "minecraft:snowball"
-						}
-					}
+				"player": {
+				  "type_specific": {
+					"type": "player",
+					"stats": [
+					  {
+						"type": "minecraft:used",
+						"stat": "minecraft:snowball",
+						"value": 1
+					  }
+					]
+				  }
 				}
-			}
+			  }
 		}
 	}
 }

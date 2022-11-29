@@ -10,7 +10,8 @@
       "hidden": false
     },
     "rewards": {
-      "function": "scif:msg/ducks_love_water"
+      "function": "scif:msg/ducks_love_water",
+      "experience": 150
     },
     "parent": "scif:scif/not_a_frisbee",
     "criteria": {

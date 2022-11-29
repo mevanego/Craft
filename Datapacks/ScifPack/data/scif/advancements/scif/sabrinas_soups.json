@@ -1,0 +1,54 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:rabbit_stew",
+        "nbt": "{Enchantments:[{id:\"minecraft:unbreaking\",lvl:10}]}"
+      },
+      "title": "Sabrina's Soups",
+      "description": "Hold every type of soup or stew. Then tell Theo that he's a good Iron Golem",
+      "frame": "goal",
+      "announce_to_chat": true,
+      "show_toast":  true,
+      "hidden": false
+    },
+    "parent": "scif:scif/root",
+
+	"criteria": {
+        "diamond": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"minecraft:rabbit_stew"
+						],
+						"count": 1
+					},
+					{
+						"items": [
+							"minecraft:mushroom_stew"
+						],
+						"count": 1
+					},
+					{
+						"items": [
+							"minecraft:beetroot_soup"
+						],
+						"count": 1
+					},
+					{
+						"items": [
+							"minecraft:suspicious_stew"
+						],
+						"count": 1
+					}
+				]
+			}
+		}		
+	},
+    "rewards": {
+      "experience": 50,
+      "function": "scif:msg/sabrinas_soups"
+    }
+  }
+  

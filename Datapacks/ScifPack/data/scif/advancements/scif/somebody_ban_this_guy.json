@@ -6,7 +6,7 @@
 		"title": {"translate":"Somebody Ban This Guy"},
 		"description": {"color":"red","translate":"Kill other players 50 times"},
 		"announce_to_chat": true,
-        "frame": "challenge"
+    "frame": "challenge"
 
 	},
 	"parent": "scif:scif/thats_not_nice",

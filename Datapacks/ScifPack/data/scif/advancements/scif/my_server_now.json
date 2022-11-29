@@ -11,7 +11,8 @@
         "hidden": false
       },
       "rewards": {
-        "function": "scif:msg/my_server_now"
+        "function": "scif:msg/my_server_now",
+        "experience": 100
       },
     "parent": "scif:scif/chlud_club",
     "criteria": {

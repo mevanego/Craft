@@ -4,12 +4,16 @@ team add Red
 team add Green
 team add Purple
 team add Yellow
+team add Aqua
+team add DarkPurple
 
-team modify Blue color aqua
+team modify Blue color blue
 team modify Green color green
 team modify Purple color light_purple
 team modify Red color red
 team modify Yellow color yellow
+team modify Aqua color aqua
+team modify DarkPurple color dark_purple
 
 #Scoreboards
 scoreboard objectives add Deaths deathCount
@@ -30,6 +34,8 @@ scoreboard objectives add JoinRed trigger
 scoreboard objectives add JoinGreen trigger
 scoreboard objectives add JoinPurple trigger
 scoreboard objectives add JoinYellow trigger
+scoreboard objectives add JoinAqua trigger
+scoreboard objectives add JoinDarkPurple trigger
 
 scoreboard objectives add LeaveTeam trigger
 

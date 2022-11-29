@@ -13,7 +13,7 @@ summon firework_rocket ~ ~30 ~-10 {LifeTime:25,FireworksItem:{id:firework_rocket
 summon firework_rocket ~ ~30 ~ {LifeTime:35,FireworksItem:{id:firework_rocket,Count:1,tag:{Fireworks:{Flight:3,Explosions:[{Type:1,Flicker:1,Trail:1,Colors:[I;11743532,3887386,2437522],FadeColors:[I;6370440,2651799,14602026]}]}}}}
 
 #Move world border
-worldborder add 10000 900
+worldborder add 20000 1750
 
 gamerule doDaylightCycle true
 time set 0

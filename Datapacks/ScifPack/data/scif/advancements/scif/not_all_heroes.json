@@ -30,7 +30,7 @@
       }
     },
     "rewards": {
-      "experience": 100,
+      "experience": 150,
       "function": "scif:msg/not_all_heroes"
     }
   }

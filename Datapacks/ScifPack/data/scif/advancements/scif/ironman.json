@@ -1,0 +1,39 @@
+{
+    "display": {
+      "icon": {
+        "item": "iron_ingot",
+        "nbt": "{Enchantments:[{id:\"minecraft:unbreaking\",lvl:10}]}"
+
+      },
+      "title": "Ironman",
+      "description": "Mine 1406 Iron Ore... maybe someday",
+      "frame": "challenge",
+      "announce_to_chat": true,
+      "hidden": false
+    },
+    "parent": "scif:scif/half_ironman",
+    "criteria": {
+      "die": {
+        "trigger": "minecraft:location",
+        "conditions": {
+          "player": {
+            "type_specific": {
+              "type": "player",
+              "stats": [
+                {
+                  "type": "minecraft:mined",
+                  "stat": "minecraft:iron_ore",
+                  "value": 1406
+                }
+              ]
+            }
+          }
+        }
+      }
+    },
+    "rewards": {
+      "experience": 250,
+      "function": "scif:msg/ironman"
+    }
+  }
+  

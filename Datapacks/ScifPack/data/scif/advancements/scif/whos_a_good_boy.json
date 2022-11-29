@@ -1,0 +1,32 @@
+{
+  "display": {
+        "icon": {
+          "item": "minecraft:poppy"
+        },
+        "title": "Who's a Good Boy?",
+        "description": "Give an iron ingot to an Iron Golem to heal it",
+        "frame": "goal",
+        "announce_to_chat": true,
+        "hidden": false
+      },
+    "rewards": {
+        "function": "scif:msg/whos_a_good_boy",
+        "experience": 50
+    },
+  "parent": "scif:scif/sabrinas_soups",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:iron_ingot"
+          ]
+        },
+        "entity": {
+          "type": "minecraft:iron_golem"
+        }
+      }
+    }
+  }
+}

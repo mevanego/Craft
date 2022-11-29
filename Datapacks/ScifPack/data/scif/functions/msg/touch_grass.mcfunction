@@ -1,0 +1,1 @@
+tellraw @a {"translate":"%1$s has reached the goal %2$s%3$s%4$s","with":[{"selector":"@s"},{"color":"gold","translate":"[Touch Grass]","hoverEvent":{"action":"show_text","contents":{"color":"gold","translate":"Touch Grass","extra":[{"text":"\n"},{"color":"gold","translate":"Quit the game 100 times. Maybe go outside this time."}]}}}]}

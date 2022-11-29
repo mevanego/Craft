@@ -1,0 +1,38 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:shield"
+      },
+      "title": "All I Wanna Blockawanna",
+      "description": "Break a shield",
+      "frame": "goal",
+      "announce_to_chat": true,
+      "show_toast": false,
+      "hidden": false
+    },
+    "parent": "scif:scif/not_a_frisbee",
+    "criteria": {
+      "chop": {
+        "trigger": "minecraft:location",
+        "conditions": {
+          "player": {
+            "type_specific": {
+              "type": "player",
+              "stats": [
+                {
+                  "type": "minecraft:broken",
+                  "stat": "minecraft:shield",
+                  "value": 1
+                }
+              ]
+            }
+          }
+        }
+      }
+    },
+    "rewards": {
+      "experience": 25,
+      "function": "scif:msg/all_i_wanna"
+    }
+  }
+  

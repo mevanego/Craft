@@ -1,0 +1,1 @@
+tellraw @a {"translate":"%1$s has reached the goal %2$s%3$s%4$s","with":[{"selector":"@s"},{"color":"gold","translate":"[Birds of a Feather]","hoverEvent":{"action":"show_text","contents":{"color":"gold","translate":"Birds of a Feather!","extra":[{"text":"\n"},{"color":"gold","translate":"Fly to Y=350 while wearing a chicken head and holding a feather in each hand"}]}}}]}

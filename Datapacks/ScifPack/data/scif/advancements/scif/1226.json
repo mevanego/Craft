@@ -23,14 +23,7 @@
 							"minecraft:diamond"
 						],
 						"count": 12
-					}
-				]
-			}
-		},		
-        "diamondblock": {
-			"trigger": "minecraft:inventory_changed",
-			"conditions": {
-				"items": [
+					},
 					{
 						"items": [
 							"minecraft:diamond_block"
@@ -40,7 +33,7 @@
 				]
 			}
 		}		
-	}	,
+	},
     "rewards": {
       "experience": 1226,
       "function": "scif:msg/1226"

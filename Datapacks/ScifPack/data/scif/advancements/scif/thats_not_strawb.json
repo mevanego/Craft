@@ -1,0 +1,34 @@
+{
+    "display": {
+		"icon": {
+			"item": "minecraft:player_head",
+            "nbt": "{SkullOwner:{Id:[I;1803731383,-714386330,-1390830601,-1954235271],Properties:{textures:[{Value:\"e3RleHR1cmVzOntTS0lOOnt1cmw6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjRlZDI1ZWZmMzJjNzY0ODE1MDZhZDEyNTkzOGMwMjEzNzU1NThlYWNkY2E0OThhNDAzMWRhMWE4YTgyOTdkZiJ9fX0=\"}]}}}"
+		},
+		"title": {"translate":"That's not Strawb"},
+		"description": {"color":"green","translate":"Stand in a sweet berry bush"},
+		"announce_to_chat": true
+	},
+	"parent": "scif:scif/thats_my_boy",
+	"rewards": {
+		"function": "scif:msg/thats_not_strawb"
+	},	
+    "criteria": {
+      "snowball": {
+        "trigger": "minecraft:location",
+        "conditions": {
+          "player": {
+            "type_specific": {
+              "type": "player"
+            },
+            "stepping_on": {
+                "block": {
+                    "blocks": [
+                      "minecraft:sweet_berry_bush"
+                    ]
+                  }
+            }
+          }
+        }
+      }
+    }
+  }
