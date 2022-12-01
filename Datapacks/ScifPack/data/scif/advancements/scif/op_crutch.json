@@ -4,13 +4,13 @@
 			"item": "minecraft:tipped_arrow"
 		},
 		"title": {"translate":"OP Crutch"},
-		"description": {"color":"dark_purple","translate":"Shoot another player from over 100 blocks away"},
+		"description": {"color":"dark_purple","translate":"Shoot another player from over 60 blocks away"},
 		"announce_to_chat": true,
 		"frame": "challenge"
 	},
-	"parent": "scif:scif/sova_one_trick",
+	"parent": "scif:scif/spike_detonated",
 	"rewards": {
-		"function": "scif:msg/op_crutch",
+		"function": "scif:msg/spike_detonated",
 		"experience": 200
 	},	
 	"criteria": {
@@ -24,7 +24,7 @@
 					"type": "player",
 					"distance": {
 						"absolute": {
-							"min": 100
+							"min": 60
 						}
 					}
 				}

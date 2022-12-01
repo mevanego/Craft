@@ -11,7 +11,7 @@
       "show_toast": true,
       "hidden": false
     },
-    "parent": "scif:scif/spike_detonated",
+    "parent": "scif:scif/op_crutch",
     "criteria": {
       "chop": {
         "trigger": "minecraft:location",
@@ -23,7 +23,9 @@
                 {
                   "type": "minecraft:used",
                   "stat": "minecraft:bow",
-                  "value": 3000
+                  "value": {
+                    "min": 3000
+                  }
                 }
               ]
             }

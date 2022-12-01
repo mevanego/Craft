@@ -1,0 +1,28 @@
+{
+	"display": {
+	"icon": {
+		"item": "minecraft:enchanted_book"
+	},
+	"title": {"translate":"This One Lives"},
+	"description": {"color":"green","translate":"Trade with a villager for an enchanted book"},
+	"announce_to_chat": true,
+    "frame": "task",
+    "hidden": false
+	},
+	"parent": "scif:scif/root",
+	"rewards": {
+		"function": "scif:msg/this_one_lives"
+	},		
+	"criteria": {
+		"flower": {
+			"trigger": "minecraft:villager_trade",
+			"conditions": {
+				"item": {
+					"items": [ 
+						"minecraft:enchanted_book"
+					]
+				}
+			}
+		}
+	}
+}

@@ -10,7 +10,7 @@
     "announce_to_chat": true,
     "hidden": false
   },
-  "parent": "scif:scif/root",
+  "parent": "scif:scif/my_server_now",
   "criteria": {
     "die": {
       "trigger": "minecraft:location",
@@ -22,7 +22,9 @@
               {
                 "type": "minecraft:custom",
                 "stat": "minecraft:deaths",
-                "value": 50
+                "value": {
+                  "min": 50
+                }
               }
             ]
           }

@@ -11,12 +11,12 @@
     },
     "rewards": {
       "function": "scif:msg/ducks_love_water",
-      "experience": 150
+      "experience": 100
     },
     "parent": "scif:scif/not_a_frisbee",
     "criteria": {
       "ducks_love_water": {
-        "trigger": "minecraft:tick",
+        "trigger": "minecraft:location",
         "conditions": {
           "player": [
             {

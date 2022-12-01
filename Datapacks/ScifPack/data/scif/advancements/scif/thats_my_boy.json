@@ -10,7 +10,8 @@
 	},
 	"parent": "scif:scif/my_server_now",
 	"rewards": {
-		"function": "scif:msg/thats_my_boy"
+		"function": "scif:msg/thats_my_boy",
+		"experience": 50
 	},		
 	"criteria": {
 		"name_tag": {

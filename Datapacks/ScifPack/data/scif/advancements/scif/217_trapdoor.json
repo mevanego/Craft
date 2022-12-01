@@ -23,8 +23,7 @@
                   "type": "minecraft:crafted",
                   "stat": "minecraft:spruce_trapdoor",
                   "value": {
-                    "min": 217,
-                    "max": 1000
+                    "min": 217
                   }
                 }
               ]
@@ -34,7 +33,7 @@
       }
     },
     "rewards": {
-      "experience": 217,
+      "experience": 50,
       "function": "scif:msg/217_trapdoor"
     }
   }

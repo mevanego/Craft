@@ -1,0 +1,51 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:campfire"
+      },
+      "title": "A Campfire Story",
+      "description": "Cook an item on a campfire in a forest at night",
+      "frame": "goal",
+      "announce_to_chat": true,
+      "hidden": true
+    },
+    "parent": "scif:scif/the_fire_nation_attacked",
+    "criteria": {
+      "campfire": {
+        "trigger": "minecraft:item_used_on_block",
+        "conditions": {
+          "player": [
+            {
+              "condition": "minecraft:time_check",
+              "value": {
+                "min": 13000,
+                "max": 22000
+              }
+            }
+          ],
+          "item": {
+            "items": [
+              "minecraft:porkchop",
+              "minecraft:chicken",
+              "minecraft:beef",
+              "minecraft:cod",
+              "minecraft:salmon",
+              "minecraft:mutton",
+              "minecraft:potato"
+            ]
+          },
+          "location": {
+            "biome": "minecraft:forest",
+            "block": {
+              "tag": "minecraft:campfires"
+            }
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "scif:msg/campfire_story",
+      "experience": 100
+    }
+  }
+  

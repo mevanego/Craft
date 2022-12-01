@@ -1,0 +1,1 @@
+tellraw @a {"translate":"%1$s has reached the goal %2$s%3$s%4$s","with":[{"selector":"@s"},{"color":"gold","translate":"[You Using That?]","hoverEvent":{"action":"show_text","contents":{"color":"gold","translate":"You Using That?","extra":[{"text":"\n"},{"color":"gold","translate":"Stand on an occupied bed"}]}}}]}

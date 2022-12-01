@@ -4,7 +4,7 @@
 			"item": "minecraft:wooden_sword"
         },
 		"title": {"translate":"That's Not Nice"},
-		"description": {"color":"green","translate":"Kill another player"},
+		"description": {"color":"red","translate":"Kill another player"},
 		"announce_to_chat": true
 
 	},
@@ -24,7 +24,9 @@
                   {
                     "type": "minecraft:killed",
                     "stat": "minecraft:player",
-                    "value": 1
+                    "value": {
+                      "min": 1
+                    }
                   }
                 ]
               }

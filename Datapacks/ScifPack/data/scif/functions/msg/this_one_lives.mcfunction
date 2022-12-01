@@ -1,0 +1,1 @@
+tellraw @a {"translate":"%1$s has reached the goal %2$s%3$s%4$s","with":[{"selector":"@s"},{"color":"gold","translate":"[This One Lives]","hoverEvent":{"action":"show_text","contents":{"color":"gold","translate":"This One Lives","extra":[{"text":"\n"},{"color":"gold","translate":"Trade with a villager for an enchanted book\nHe lives... for now."}]}}}]}

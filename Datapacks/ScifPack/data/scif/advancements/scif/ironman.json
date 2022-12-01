@@ -23,7 +23,9 @@
                 {
                   "type": "minecraft:mined",
                   "stat": "minecraft:iron_ore",
-                  "value": 1406
+                  "value": {
+                    "min": 1406
+                  }
                 }
               ]
             }
@@ -32,7 +34,7 @@
       }
     },
     "rewards": {
-      "experience": 250,
+      "experience": 140,
       "function": "scif:msg/ironman"
     }
   }

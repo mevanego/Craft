@@ -22,7 +22,9 @@
                 {
                   "type": "minecraft:broken",
                   "stat": "minecraft:shield",
-                  "value": 1
+                  "value": {
+                    "min": 1
+                  }
                 }
               ]
             }

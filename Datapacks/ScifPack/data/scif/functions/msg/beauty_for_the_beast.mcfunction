@@ -1,0 +1,1 @@
+tellraw @a {"translate":"%1$s has reached the goal %2$s%3$s%4$s","with":[{"selector":"@s"},{"color":"gold","translate":"[Beauty for the Beast]","hoverEvent":{"action":"show_text","contents":{"color":"gold","translate":"Beauty for the Beast","extra":[{"text":"\n"},{"color":"gold","translate":"Hit a Ravager with a flower"}]}}}]}

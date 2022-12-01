@@ -1,0 +1,44 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:crossbow"
+		},
+		"title": {"translate":"For the Both of Us"},
+		"description": {"color":"red","translate":"Lose a crossbow duel at high noon"},
+		"announce_to_chat": true,
+		"frame": "challenge"
+	},
+	"parent": "scif:scif/this_town",
+	"rewards": {
+		"function": "scif:msg/for_the_both_of_us"
+	},	
+	"criteria": {
+		"killed_player": {
+			"trigger": "minecraft:entity_killed_player",
+			"conditions": {
+				"killing_blow": {
+					"is_projectile": true,
+                    "source_entity": {
+                      "equipment": {
+                        "mainhand": {
+                          "items": [
+                            "minecraft:crossbow"
+                          ]
+                        }
+                      }
+                    }
+				},
+				"entity": {
+					"type": "player"
+				},
+                "test":{
+                    "condition": "minecraft:time_check",
+                    "value": {
+                        "min": 5000,
+                        "max": 7000
+                      }
+                }
+			}
+		}
+	}
+}

@@ -1,10 +1,11 @@
 {
 	"display": {
 		"icon": {
-			"item": "minecraft:crossbow"
+			"item": "minecraft:crossbow",
+			"nbt": "{Enchantments:[{id:\"minecraft:unbreaking\",lvl:10}]}"
 		},
 		"title": {"translate":"This Town Ain't Big Enough"},
-		"description": {"color":"dark_purple","translate":"Kill another player with a crossbow at noon"},
+		"description": {"color":"red","translate":"Win a crossbow duel at high noon"},
 		"announce_to_chat": true,
 		"frame": "challenge"
 	},
@@ -35,8 +36,8 @@
                 "test":{
                     "condition": "minecraft:time_check",
                     "value": {
-                        "min": 5500,
-                        "max": 6500
+                        "min": 5000,
+                        "max": 7000
                       }
                 }
 			}

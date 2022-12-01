@@ -23,8 +23,7 @@
                   "type": "minecraft:crafted",
                   "stat": "minecraft:map",
                   "value": {
-                    "min": 100,
-                    "max": 1000
+                    "min": 100
                   }
                 }
               ]
@@ -34,7 +33,7 @@
       }
     },
     "rewards": {
-      "experience": 150,
+      "experience": 100,
       "function": "scif:msg/server_cartographer"
     }
   }

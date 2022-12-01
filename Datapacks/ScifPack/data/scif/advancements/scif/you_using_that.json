@@ -1,0 +1,35 @@
+{
+    "display": {
+          "icon": {
+            "item": "minecraft:black_bed"
+          },
+          "title": "You Using That?",
+          "description": "Stand on an occupied bed",
+          "frame": "goal",
+          "announce_to_chat": true,
+          "hidden": true
+        },
+      "rewards": {
+          "function": "scif:msg/you_using_that",
+          "experience": 50
+      },
+    "parent": "scif:scif/this_one_lives",
+    "criteria": {
+        "test": {
+          "trigger": "minecraft:location",
+          "conditions": {
+            "player": {
+              "type": "minecraft:player",
+              "stepping_on": {
+                "block": {
+                  "tag": "minecraft:beds",
+                  "state": {
+                    "occupied": true
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+  }

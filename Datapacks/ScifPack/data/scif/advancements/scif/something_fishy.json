@@ -1,0 +1,35 @@
+{
+    "display": {
+        "icon": {
+          "item": "minecraft:fishing_rod"
+        },
+        "title": "There's Something Fishy Here",
+        "description": "Hook a Zombie that is wearing a cod player head with a fishing rod",
+        "frame": "challenge",
+        "announce_to_chat": true,
+        "hidden": false
+      },
+      "rewards": {
+        "function": "scif:msg/something_fishy",
+        "experience": 100
+      },
+    "parent": "scif:scif/hog_rider",
+    "criteria": {
+      "fishy": {
+        "trigger": "minecraft:fishing_rod_hooked",
+        "conditions": {
+          "entity": {
+            "type": "minecraft:zombie",
+            "equipment": {
+              "head": {
+                "items": [
+                  "minecraft:player_head"
+                ],
+                "nbt": "{SkullOwner:{Id:[I;2054676279,-1972548100,-2043577712,772634513],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjI0NmUxOWIzMmNmNzg0NTQ5NDQ3ZTA3Yjk2MDcyZTFmNjU2ZDc4ZTkzY2NjYTU2Mzc0ODVlNjc0OTczNDY1MiJ9fX0=\"}]}}}"
+              }
+            }
+          }
+        }
+      }
+    }
+  }

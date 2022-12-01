@@ -6,13 +6,13 @@
 
       },
       "title": "And Stay Out!",
-      "description": "Kill 5 Wandering Traders",
+      "description": {"color":"red","translate":"Kill 5 Wandering Traders"},
       "frame": "goal",
       "announce_to_chat": true,
       "show_toast": false,
       "hidden": false
     },
-    "parent": "scif:scif/the_fire_nation_attacked",
+    "parent": "scif:scif/thats_not_nice",
     "criteria": {
       "kill": {
         "trigger": "minecraft:location",
@@ -24,7 +24,9 @@
                 {
                   "type": "minecraft:killed",
                   "stat": "minecraft:wandering_trader",
-                  "value": 5
+                  "value": {
+                    "min": 5
+                  }
                 }
               ]
             }
@@ -33,7 +35,7 @@
       }
     },
     "rewards": {
-      "experience": 150,
+      "experience": 50,
       "function": "scif:msg/and_stay_out"
     }
   }

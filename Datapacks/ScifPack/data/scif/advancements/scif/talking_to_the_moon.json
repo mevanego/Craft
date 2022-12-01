@@ -10,7 +10,7 @@
       "show_toast": false,
       "hidden": false
     },
-    "parent": "scif:scif/root",
+    "parent": "scif:scif/not_all_heroes",
     "criteria": {
       "chop": {
         "trigger": "minecraft:location",
@@ -22,7 +22,9 @@
                 {
                   "type": "minecraft:mined",
                   "stat": "minecraft:copper_ore",
-                  "value": 1000
+                  "value": {
+                    "min": 1000
+                  }
                 }
               ]
             }

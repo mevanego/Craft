@@ -4,10 +4,10 @@
 			"item": "minecraft:fire_charge"
 		},
 		"title": {"translate":"The Fire Nation Attacked"},
-		"description": {"color":"green","translate":"Catch on Fire! Then call the Avatar"},
+		"description": {"color":"red","translate":"Catch on Fire!"},
 		"announce_to_chat": true
 	},
-	"parent": "scif:scif/talking_to_the_moon",
+	"parent": "scif:scif/root",
 	"rewards": {
 		"function": "scif:msg/the_fire_nation_attacked"
 	},	

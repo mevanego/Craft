@@ -21,7 +21,9 @@
                 {
                   "type": "minecraft:custom",
                   "stat": "minecraft:sleep_in_bed",
-                  "value": 100
+                  "value": {
+                    "min": 100
+                  }
                 }
               ]
             }

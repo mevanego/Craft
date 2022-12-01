@@ -1,0 +1,31 @@
+{
+    "display": {
+      "icon": {
+        "item": "potion"
+
+      },
+      "title": "Love Potion",
+      "description": "Breed two animals while invisible",
+      "frame": "challenge",
+      "announce_to_chat": true,
+      "hidden": false
+    },
+    "parent": "scif:scif/whos_a_good_boy",
+    "criteria": {
+        "love": {
+          "trigger": "minecraft:bred_animals",
+          "conditions": {
+            "player": {
+              "effects": {
+                "minecraft:invisibility": {}
+              }
+            }
+          }
+        }
+      },
+    "rewards": {
+      "experience": 50,
+      "function": "scif:msg/love_potion"
+    }
+  }
+  

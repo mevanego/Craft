@@ -1,0 +1,1 @@
+tellraw @a {"translate":"%1$s has reached the goal %2$s%3$s%4$s","with":[{"selector":"@s"},{"color":"gold","translate":"[Server Historian]","hoverEvent":{"action":"show_text","contents":{"color":"gold","translate":"Server Historian","extra":[{"text":"\n"},{"color":"gold","translate":"Use a Book and Quill 100 times\nSomeone's gotta write this lore"}]}}}]}

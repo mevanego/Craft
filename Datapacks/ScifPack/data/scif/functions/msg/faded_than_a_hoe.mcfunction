@@ -1,0 +1,1 @@
+tellraw @a {"translate":"%1$s has reached the goal %2$s%3$s%4$s","with":[{"selector":"@s"},{"color":"gold","translate":"[Faded Than a Hoe]","hoverEvent":{"action":"show_text","contents":{"color":"gold","translate":"Faded Than a Hoe","extra":[{"text":"\n"},{"color":"gold","translate":"Use a Netherite Hoe while under the darkness effect"}]}}}]}

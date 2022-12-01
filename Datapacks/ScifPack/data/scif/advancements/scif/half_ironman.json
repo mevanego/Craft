@@ -9,7 +9,7 @@
       "announce_to_chat": true,
       "hidden": false
     },
-    "parent": "scif:scif/talking_to_the_moon",
+    "parent": "scif:scif/217_trapdoor",
     "criteria": {
       "die": {
         "trigger": "minecraft:location",
@@ -21,7 +21,9 @@
                 {
                   "type": "minecraft:mined",
                   "stat": "minecraft:iron_ore",
-                  "value": 703
+                  "value": {
+                    "min": 703
+                  }
                 }
               ]
             }
@@ -30,7 +32,7 @@
       }
     },
     "rewards": {
-      "experience": 100,
+      "experience": 70,
       "function": "scif:msg/half_ironman"
     }
   }

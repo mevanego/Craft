@@ -1,0 +1,1 @@
+tellraw @a {"translate":"%1$s has reached the goal %2$s%3$s%4$s","with":[{"selector":"@s"},{"color":"gold","translate":"[Aim for the Bushes]","hoverEvent":{"action":"show_text","contents":{"color":"gold","translate":"Aim for the Bushes","extra":[{"text":"\n"},{"color":"gold","translate":"Fall at least 30 blocks onto stone \nThere goes my hero"}]}}}]}

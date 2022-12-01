@@ -28,13 +28,13 @@
             "items": [
               "minecraft:player_head"
             ],
-            "nbt": "{SkullOwner:{Id:[I;1684502214,2030261973,-1342371707,456769113],Properties:{textures:[{Value:\"e3RleHR1cmVzOntTS0lOOnt1cmw6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZmFjZjgyZDhhODE0MDEzODZlMmVhMmVlMzJmMzVjYTYxOGQ4NzdkODA0NmM0OTI5NGRhMWU2Yzg1YzYyNGFiYiJ9fX0=\"}]}}}"
+            "nbt": "{SkullOwner:{Id:[I;-702940230, -1025881904, -1997376393, 1862884874],Properties:{textures:[{Value:\"ewogICJ0aW1lc3RhbXAiIDogMTY2OTcwMjYyOTg5NiwKICAicHJvZmlsZUlkIiA6ICJkNjE5ZmJiYWMyZGE0OGQwODhmMjc0Nzc2ZjA5NWUwYSIsCiAgInByb2ZpbGVOYW1lIiA6ICJoYWthc2FwbCIsCiAgInNpZ25hdHVyZVJlcXVpcmVkIiA6IHRydWUsCiAgInRleHR1cmVzIiA6IHsKICAgICJTS0lOIiA6IHsKICAgICAgInVybCIgOiAiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS9mYWNmODJkOGE4MTQwMTM4NmUyZWEyZWUzMmYzNWNhNjE4ZDg3N2Q4MDQ2YzQ5Mjk0ZGExZTZjODVjNjI0YWJiIgogICAgfSwKICAgICJDQVBFIiA6IHsKICAgICAgInVybCIgOiAiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS9mOWE3NjUzNzY0Nzk4OWY5YTBiNmQwMDFlMzIwZGFjNTkxYzM1OWU5ZTYxYTMxZjRjZTExYzg4ZjIwN2YwYWQ0IgogICAgfQogIH0KfQ==\"}]}}}"
           }
         }
       }
     },
     "rewards": {
       "function": "scif:msg/his_server_now",
-      "experience": 125
+      "experience": 150
     }
   }

@@ -1,0 +1,33 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:pufferfish"
+      },
+      "title": "Sealegs",
+      "description": "Have nausea, while in an ocean biome",
+      "frame": "goal",
+      "announce_to_chat": true,
+      "hidden": false
+    },
+    "parent": "scif:scif/ducks_love_water",
+    "criteria": {
+        "ocean": {
+          "trigger": "minecraft:effects_changed",
+          "conditions": {
+            "player": {
+              "location": {
+                "biome": "minecraft:ocean"
+              },
+              "effects": {
+                "minecraft:nausea": {}
+              }
+            }
+          }
+        }
+      },
+    "rewards": {
+      "experience": 100,
+      "function": "scif:msg/sealegs"
+    }
+  }
+  

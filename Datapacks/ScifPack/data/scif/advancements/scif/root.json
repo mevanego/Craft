@@ -4,7 +4,7 @@
 			"item": "minecraft:clock",
             "nbt": "{Enchantments:[{id:\"minecraft:unbreaking\",lvl:10}]}"
 		},
-		"title": {"translate":"SCIF - 12:26"},
+		"title": {"translate":"SCIF Craft Season 6"},
 		"description": {"color":"blue","translate":"Custom Season 6 Advancements!"},
 		"background": "minecraft:textures/block/gold_block.png",
 		"show_toast": false,

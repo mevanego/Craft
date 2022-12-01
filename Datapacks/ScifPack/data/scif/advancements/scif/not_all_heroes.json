@@ -9,7 +9,7 @@
       "announce_to_chat": true,
       "hidden": false
     },
-    "parent": "scif:scif/talking_to_the_moon",
+    "parent": "scif:scif/root",
     "criteria": {
       "chop": {
         "trigger": "minecraft:location",
@@ -21,7 +21,9 @@
                 {
                   "type": "minecraft:mined",
                   "stat": "minecraft:birch_log",
-                  "value": 1000
+                  "value": {
+                    "min": 1000
+                  }
                 }
               ]
             }

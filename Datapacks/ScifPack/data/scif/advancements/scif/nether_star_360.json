@@ -13,7 +13,7 @@
         "function": "scif:msg/nether_star_360",
         "experience": 100
     },
-  "parent": "scif:scif/chlud_club",
+  "parent": "scif:scif/my_server_now",
   "criteria": {
     "requirement": {
       "trigger": "minecraft:player_interacted_with_entity",

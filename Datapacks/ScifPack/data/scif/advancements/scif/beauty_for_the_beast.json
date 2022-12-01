@@ -1,0 +1,41 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:poppy",
+          "nbt": "{Enchantments:[{id:\"minecraft:unbreaking\",lvl:10}]}"
+      },
+      "title": "Beauty for the Beast",
+      "description": "Hit a Ravager with a flower",
+      "frame": "challenge",
+      "announce_to_chat": true,
+      "show_toast": false,
+      "hidden": false
+    },
+    "parent": "scif:scif/thats_my_boy",
+    "criteria": {
+        "test": {
+          "trigger": "minecraft:player_hurt_entity",
+          "conditions": {
+            "entity": {
+              "type": "minecraft:ravager"
+            },			
+            "damage": {
+                "type": {
+                    "source_entity": {
+                        "equipment": {
+                            "mainhand": {
+                                "tag": "minecraft:small_flowers"
+                            }
+                        }
+                    }
+                }
+            }
+          }
+        }
+      },
+    "rewards": {
+      "experience": 100,
+      "function": "scif:msg/beauty_for_the_beast"
+    }
+  }
+  

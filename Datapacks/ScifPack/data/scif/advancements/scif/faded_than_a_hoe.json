@@ -1,0 +1,42 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:netherite_hoe"
+		},
+		"title": {"translate":"Faded Than a Hoe"},
+		"description": {"color":"red","translate":"Use a Netherite Hoe, while under the effect of darkness"},
+		"announce_to_chat": true,
+		"frame": "challenge"
+	},
+	"parent": "scif:scif/the_fire_nation_attacked",
+	"rewards": {
+		"function": "scif:msg/faded_than_a_hoe",
+        "experience": 150
+	},	
+    "criteria": {
+        "faded": {
+          "trigger": "minecraft:item_durability_changed",
+          "conditions": {
+            "player": {
+              "equipment": {
+                "mainhand": {
+                  "items": [
+                    "minecraft:netherite_hoe"
+                  ]
+                }
+              },
+              "effects": {
+                "minecraft:darkness": {
+                  "amplifier": {
+                    "min": 1
+                  },
+                  "duration": {
+                    "min": 1
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+}

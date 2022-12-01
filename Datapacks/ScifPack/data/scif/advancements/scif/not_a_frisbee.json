@@ -22,7 +22,9 @@
 					  {
 						"type": "minecraft:used",
 						"stat": "minecraft:snowball",
-						"value": 1
+						"value": {
+						  "min": 1
+						}
 					  }
 					]
 				  }

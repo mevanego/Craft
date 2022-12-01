@@ -25,7 +25,9 @@
                   {
                     "type": "minecraft:killed",
                     "stat": "minecraft:player",
-                    "value": 50
+                    "value": {
+                      "min": 50
+                    }
                   }
                 ]
               }

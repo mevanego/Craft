@@ -12,7 +12,7 @@
   },
   "rewards": {
     "function": "scif:msg/captain_jack",
-    "experience": 150
+    "experience": 200
   },
     "parent": "scif:scif/thats_my_boy",
     "criteria": {

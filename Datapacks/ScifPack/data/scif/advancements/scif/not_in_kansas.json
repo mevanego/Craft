@@ -1,0 +1,35 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:leather_boots",
+        "nbt": "{display:{color:11546450}}"
+      },
+      "title": "Not In Kansas Anymore",
+      "description": "Interact with your puppy while in the Nether",
+      "frame": "goal",
+      "announce_to_chat": true,
+      "hidden": false
+    },
+    "parent": "scif:scif/out_of_the_frying_pan",
+    "criteria": {
+        "test": {
+          "trigger": "minecraft:player_interacted_with_entity",
+          "conditions": {
+            "entity": {
+              "type": "minecraft:wolf",
+              "location": {
+                "dimension": "minecraft:the_nether"
+              },
+              "flags": {
+                "is_baby": true
+              }
+            }
+          }
+        }
+      },
+    "rewards": {
+      "experience": 100,
+      "function": "scif:msg/not_in_kansas"
+    }
+  }
+  

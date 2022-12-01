@@ -4,7 +4,7 @@
 			"item": "minecraft:tnt"
         },
 		"title": {"translate":"Spike Detonated"},
-		"description": {"color":"green","translate":"Defenders lost"},
+		"description": {"color":"red","translate":"Defenders lost"},
 		"announce_to_chat": true
 
 	},

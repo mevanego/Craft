@@ -21,7 +21,9 @@
                 {
                   "type": "minecraft:custom",
                   "stat": "minecraft:leave_game",
-                  "value": 100
+                  "value": {
+                    "min": 100
+                  }
                 }
               ]
             }
